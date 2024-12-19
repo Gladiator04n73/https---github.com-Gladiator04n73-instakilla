@@ -1,0 +1,102 @@
+.headerBg {
+  background: #fff;
+  padding-top: 12px;
+  border-bottom: 1px solid #efefef;
+  width: 100%;
+}
+
+.headerContent {
+  max-width: 924px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.logo {
+  width: 103px;
+  height: auto;
+}
+
+.searchContainer {
+  background: #efefef;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 9px 20px;
+  gap: 12px;
+}
+
+.searchIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.searchInput {
+  background: none;
+  border: none;
+  outline: none;
+  color: #8e8e8e;
+  font: 400 16px Roboto, sans-serif;
+}
+
+.navIconsContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navIcons {
+  width: 25px;
+  height: auto;
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+  .headerContent {
+    flex-wrap: wrap;
+  }
+}
+
+.formOverlay {
+  width: 100vh;
+  height: 85vh;
+  position: fixed; /* or absolute depending on the desired behavior */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for element's own size */
+  z-index: 1000; /* Ensure it appears above other elements */
+  background: #dfdbdb; /* Background color for visibility */
+  padding: 20px; /* Padding for the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  .titleCreatePost {
+  text-align: center;
+  border-bottom-color: rgb(161, 161, 161);
+  border-style: solid;
+  border-width: 0px 0px 3px 0px;
+  padding-bottom: 1%;
+  }
+  .formContainer {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .formImg {
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+    opacity: 0.3;
+  }
+}
+
+.divider {
+  border: none; /* Убираем стандартные границы */
+  margin: 10px 0; /* Отступы сверху и снизу */
+}

@@ -1,0 +1,25 @@
+.photoGrid {
+  display: flex;
+  gap: 20px;
+}
+
+.photoItem {
+  background-color: rgba(196, 196, 196, 1);
+  display: flex;
+  width: 290px;
+  height: 290px;
+  aspect-ratio: 1;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  .photoGrid {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .photoItem {
+    margin-top: 30px;
+  }
+}
